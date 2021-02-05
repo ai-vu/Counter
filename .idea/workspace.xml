@@ -43,7 +43,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1612459018804" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612513600939</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Counter Android Exercise">
+      <created>1612513960618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612513960618</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,9 +157,9 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/../git_counter" />
     </ignored-roots>
-    <MESSAGE value="Counter Android Exercise" />
     <MESSAGE value="Initial Counter project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Counter project" />
+    <MESSAGE value="Counter Android Exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Counter Android Exercise" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="159" key="AndroidCreateResourceFileDialog" timestamp="1612373922818">
@@ -183,17 +190,21 @@
       <screen x="0" y="0" width="1440" height="834" />
     </state>
     <state x="246" y="186" key="IDE.errors.dialog/0.0.1440.834@0.0.1440.834" timestamp="1612299519057" />
-    <state x="129" y="59" key="SettingsEditor" timestamp="1612513239422">
+    <state x="129" y="59" key="SettingsEditor" timestamp="1612514100073">
       <screen x="0" y="0" width="1440" height="834" />
     </state>
-    <state x="129" y="59" key="SettingsEditor/0.0.1440.834@0.0.1440.834" timestamp="1612513239422" />
-    <state x="228" y="137" key="Vcs.Push.Dialog.v2" timestamp="1612511913642">
+    <state x="129" y="59" key="SettingsEditor/0.0.1440.834@0.0.1440.834" timestamp="1612514100073" />
+    <state x="228" y="137" key="Vcs.Push.Dialog.v2" timestamp="1612514061071">
       <screen x="0" y="0" width="1440" height="834" />
     </state>
-    <state x="228" y="137" key="Vcs.Push.Dialog.v2/0.0.1440.834@0.0.1440.834" timestamp="1612511913642" />
+    <state x="228" y="137" key="Vcs.Push.Dialog.v2/0.0.1440.834@0.0.1440.834" timestamp="1612514061070" />
     <state x="707" y="182" key="chooseDestDirectoryDialog" timestamp="1612375327911">
       <screen x="0" y="0" width="1440" height="834" />
     </state>
     <state x="707" y="182" key="chooseDestDirectoryDialog/0.0.1440.834@0.0.1440.834" timestamp="1612375327911" />
+    <state x="411" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612514003149">
+      <screen x="0" y="0" width="1440" height="834" />
+    </state>
+    <state x="411" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.834@0.0.1440.834" timestamp="1612514003149" />
   </component>
 </project>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_lavender"
+    tools:context=".MainActivity">
+
+    <!-- Create a horizontal guideline 25% top of display -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <!-- Create a text view at 25% from top -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/lavender"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTxt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </TextView>
+
+    <!-- Create a guideline at 60% of display -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRadioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <!-- Create 3 radio buttons for number type options -->
+    <RadioGroup
+        android:id="@+id/radioBtnGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/decBtn"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineRadioBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/decTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dec_btn"
+            android:textColor="@color/black">
+        </TextView>
+        <RadioButton
+            android:id="@+id/decBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioBtnClick">
+        </RadioButton>
+        <TextView
+            android:id="@+id/binTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bin_btn"
+            android:textColor="@color/black">
+        </TextView>
+        <RadioButton
+            android:id="@+id/binBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioBtnClick">
+        </RadioButton>
+        <TextView
+            android:id="@+id/hexTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hex_btn"
+            android:textColor="@color/black">
+        </TextView>
+        <RadioButton
+            android:id="@+id/hexBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioBtnClick">
+        </RadioButton>
+    </RadioGroup>
+
+    <!-- Create a guideline at 25% from bottom of display -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <!-- Create a row 3 buttons at 25% from bottom -->
+    <!-- Button Reset & As an image-->
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/toast_frame"
+        android:onClick="resetBtnClick"
+        android:text="@string/reset_btn"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </Button>
+    <!-- Button Plus right side Reset -->
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="plusBtnClick"
+        android:text="@string/plus_btn"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:backgroundTint="@color/blush_pink"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineBtn"
+        app:layout_constraintLeft_toRightOf="@+id/resetBtn"
+        app:layout_constraintRight_toRightOf="parent">
+    </Button>
+    <!-- Button Minus left side Reset -->
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="minusBtnClick"
+        android:text="@string/minus_btn"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:backgroundTint="@color/blush_pink"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/resetBtn">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

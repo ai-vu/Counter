@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="plus_btn">+</string>
+    <string name="minus_btn">-</string>
+    <string name="reset_btn">RESET</string>
+    <string name="dec_btn">DEC</string>
+    <string name="bin_btn">BIN</string>
+    <string name="hex_btn">HEX</string>
+</resources>
